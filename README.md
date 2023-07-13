@@ -31,7 +31,7 @@ data:   2.0000, grad: 645.5773, name:, op:
 data:  24.7041, grad:   1.0000, name:, op:+
 ```
 
-## 45行代码，实现一个迷你版的支持多个隐藏层的神经网络（MLP Network）
+## 45行代码，实现一个迷你版的支持多个隐藏层的神经网络库（MLP Network）
 -------
 代码在[module.py](module.py).
 - 定义了一个Module类（模仿Pytorch框架），作为所有自定义Network的基类
@@ -70,11 +70,11 @@ data:  24.7041, grad:   1.0000, name:, op:+
 -------
 1. 创建一个新的Python环境: `conda create -n mygrad python=3.10`
 2. 激活上述环境: `conda activate mygrad`
-3. 下载本代码库: `git clone https://github.com/zhangfaen/24GameGPT.git`
+3. 下载本代码库: `git clone https://github.com/zhangfaen/my_autograd.git`
 4. 切换目录: `cd my_autograd`
 5. 安装必要的库: `pip install -r requirements.txt`
 6. 运行测试用例1: `python mini_autograd_test.py`
-7. 运行测试用例2: `python mini_autograd_test.py`
+7. 运行测试用例2: `python module_test.py`
 8. 训练一个极简的加法器神经网络: `python demo_adder_net.py`
 9. 训练一个极简的判断奇偶判断网络: `python demo_oddeven_net.py`
 
