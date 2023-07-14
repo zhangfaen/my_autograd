@@ -141,7 +141,7 @@ def test_basic6():
     e = c - d
     f = e**2
     g = f / 2.0
-    g += 10.0 / f
+    g += 10.0 / f 
     g.backward()
     ama, bma, gma = a, b, g
     print("----")

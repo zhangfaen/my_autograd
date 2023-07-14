@@ -27,7 +27,6 @@ class OddEvenNet(Module):
     def __call__(self, x: list[Value], target) -> Value:
         x = self.layer1(x)
         x = self.layer2(x)
-        # for simplicity, we use square error
         loss = sum([(a - b)**2 for a, b in zip(x, target)])
         return loss, x[0].data
 

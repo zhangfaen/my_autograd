@@ -87,7 +87,7 @@ class Value:
         return out
     
     def sigmoid(self) -> Value:
-        return 1.0 / (1.0 + (Value(math.e) ** (-self)))
+        return 1.0 / (1.0 + (Value(math.e) ** (-self))) 
 
     def backward(self):
         if self.requires_grad == False:

@@ -29,7 +29,6 @@ class AdderNet(Module):
     def parameters(self) -> list[Value]:
         return self.layer1.parameters() 
             
-    # Return loss and logis
     def __call__(self, x, target):
         x = self.layer1(x)
         loss = (x[0] - target) ** 2 

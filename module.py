@@ -9,7 +9,7 @@ class Module:
     
     def zero_grad(self) -> None:
         for p in self.parameters():
-            p.grad = 0.0 if p.requires_grad else None
+            p.grad = 0.0 if p.requires_grad else None 
 
 class Linear(Module):
     def __init__(self, shape: tuple[int, int], activate="relu", name: str="") -> None:

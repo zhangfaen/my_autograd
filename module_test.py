@@ -13,7 +13,7 @@ def test_basic1():
         target[c] = 1.0
         loss = cross_entropy_loss(xv, target)
         loss.backward()
-        xvmd, lmd = xv, loss
+        xvmd, lmd = xv, loss 
 
         xv = torch.Tensor(v).double()
         xv.requires_grad = True
